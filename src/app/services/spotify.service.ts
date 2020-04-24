@@ -16,7 +16,7 @@ getQuery( query: string ) {
   const URL = `https://api.spotify.com/v1/${ query }`;
 
   const headers = new HttpHeaders({
-    Authorization : 'Bearer BQDV1iohVpKwgVSgJOoaBjpb6lwY2shbvcOm-Qq7siN1SzRxl8a803obIVQzdKOGqJCBtmDOZS2zgEXK3Ho'
+    Authorization : 'Bearer BQCn0GX-WFgw8mDYVO2yofXEnBfkkyo1IAFy4YW-DtIJPZeXfocJMvuRgmaFsuhvlIktOqCWDo5mYt6re18'
    });
 
   return this.http.get( URL, { headers } );

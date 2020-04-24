@@ -18,6 +18,7 @@ import { ROUTES } from './app.routes';
 // Pipes
 
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe'; 
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { ArtistComponent } from './components/artist/artist.component';
@@ -29,6 +30,7 @@ import { ArtistComponent } from './components/artist/artist.component';
     SearchComponent,
     NavbarComponent,
     NoimagePipe,
+    DomseguroPipe,
     TarjetasComponent,
     LoadingComponent,
     ArtistComponent

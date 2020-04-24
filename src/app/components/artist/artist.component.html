@@ -22,7 +22,7 @@
 
 <div class="row m-5">
   <div class="col">
-    <table class="table">
+    <table class="table" style="color: white">
       <thead>
         <tr>
           <th>
@@ -49,7 +49,7 @@
           <td>
             <!-- <audio [src]="topTrack.preview_url" controls></audio> -->
             <iframe
-              src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3"
+              [src]="topTrack.id | domseguro "
               width="300"
               height="80"
               frameborder="0"

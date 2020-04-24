@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
 
   newSongs: any [] = [];
   loading: boolean;
+  error: boolean;
 
   constructor(
 
@@ -16,12 +17,16 @@ export class HomeComponent implements OnInit {
 
   ) {
     this.loading = true;
+    this.error = false;
 
     this.spotify.getNewReleases()
       .subscribe(( data: any) => {
         // console.log( data );
         this.newSongs = data;
         this.loading = false;
+    }, ( errorService ) => {
+      this.loading = false;
+      console.log( this.error = errorService.error.error.message );
     });
 
   }
